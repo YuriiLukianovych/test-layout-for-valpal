@@ -185,6 +185,11 @@ button {
     align-items: center;
     gap: 8px;
 }
+.news-btn {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+}
 .right-side {
     background-color: #181818;
     flex-basis: calc(100% - 250px);
