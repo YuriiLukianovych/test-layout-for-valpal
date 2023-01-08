@@ -184,7 +184,7 @@ label {
   margin-top: 8px;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__header {
-  height: 24px;
+  height: 28px;
   position: relative;
   display: flex;
   align-items: center;
@@ -236,7 +236,7 @@ label {
   overflow-y: scroll;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body ul > li {
-  height: 24px;
+  height: 28px;
   display: flex;
   align-items: center;
   gap: 12px;
