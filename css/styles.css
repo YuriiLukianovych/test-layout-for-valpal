@@ -140,6 +140,9 @@ label {
 .wrapper .left-side__header .left-side__row:not(:last-child) {
   margin-bottom: 12px;
 }
+.wrapper .left-side__header .divider {
+  margin-top: 4px;
+}
 .wrapper .left-side__main {
   padding-top: 12px;
   width: 100%;
