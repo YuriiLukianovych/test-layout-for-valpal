@@ -86,17 +86,65 @@ button {
 
     /* logo color*/
     --logo-color: #ffffff;
+
+    /* other variables */
+    --border-radius: 4px !important;
+    --transition-4: 0.4s;
+    --scrollbar-width: 7px;
+    --scrollbar-width-2: 10px;
+    --header-height: 64px;
+    --footer-height: 55px;
+    --footer-height-mobile: 96px;
+    --gap5: 5px;
+    --gap10: 10px;
 }
 
-/* utilites classes */
+/* utilites classes ------------------------------------------------- */
 .w100 {
     width: 100%;
+}
+.fs0 {
+    flex-shrink: 0;
+}
+.fg1 {
+    flex-grow: 1;
 }
 .svg {
     color: inherit;
     width: 16px;
     height: 16px;
 }
+.button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    height: 44px;
+    font-size: 14px;
+    line-height: 1;
+    color: var(--main-active-text-color);
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--main-text-color-20);
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--transition-4);
+}
+.button:hover {
+    border: 1px solid var(--main-text-color-50);
+    background-color: var(--bg-600);
+}
+.button > svg {
+    height: 16px;
+    width: 16px;
+    color: var(--main-active-text-color);
+}
+/* end utilites classes ------------------------------------------------- */
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -109,6 +157,7 @@ button {
 
     color: var(--main-text-color);
     font-size: 14px;
+    line-height: 1;
 }
 .left-side {
     flex-basis: 250px;
@@ -122,6 +171,7 @@ button {
     gap: 12px;
 }
 .left-side .row {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
