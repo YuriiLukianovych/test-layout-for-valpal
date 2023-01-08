@@ -27,7 +27,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin: 0 !important;
 }
 
 ul,
@@ -112,7 +112,6 @@ label {
 .wrapper .left-side {
   flex-basis: 250px;
   height: 100%;
-  overflow: hidden;
   background-color: #121212;
   padding: 8px;
   display: flex;
@@ -186,6 +185,7 @@ label {
   position: relative;
   display: flex;
   align-items: center;
+  gap: 12px;
   cursor: pointer;
   padding-left: 24px;
   background: linear-gradient(to right, var(--accent-10) 0%, var(--accent-10) 20%, rgba(0, 0, 0, 0) 100%);
@@ -197,12 +197,8 @@ label {
   display: none;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__header .toggle-icon {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  top: 50%;
-  left: var(--gap5);
-  transform: translateY(-50%) rotateX(180deg);
+  width: 16px;
+  height: 16px;
   transition: var(--transition-4);
   display: flex;
   align-items: center;
@@ -224,6 +220,12 @@ label {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+.wrapper .left-side__main .companies-accordion-box .accordeon__header .some-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body {
   max-height: calc(100vh - 422px);
@@ -715,7 +717,7 @@ label {
 
 .dropdown-menu {
   border-radius: var(--border-radius);
-  background-color: var(--bg-600);
+  background-color: var(--bg-600) !important;
   padding: 6px;
   color: var(--main-text-color);
   border: none;

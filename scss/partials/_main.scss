@@ -15,7 +15,7 @@
     .left-side {
         flex-basis: 250px;
         height: 100%;
-        overflow: hidden;
+        // overflow: hidden;
         background-color: #121212;
         padding: 8px;
 
@@ -98,6 +98,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+                    gap: 12px;
                     cursor: pointer;
                     padding-left: 24px;
                     background: linear-gradient(
@@ -115,12 +116,9 @@
                     }
 
                     .toggle-icon {
-                        width: 14px;
-                        height: 14px;
-                        position: absolute;
-                        top: 50%;
-                        left: var(--gap5);
-                        transform: translateY(-50%) rotateX(180deg);
+                        width: 16px;
+                        height: 16px;
+
                         transition: var(--transition-4);
                         display: flex;
                         align-items: center;
@@ -150,6 +148,13 @@
                         letter-spacing: 0.03em;
                         text-transform: uppercase;
                         color: var(--secondary-text-color);
+                    }
+
+                    .some-icon {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 12px;
                     }
                 }
                 .accordeon__body {
