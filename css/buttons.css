@@ -1,0 +1,35 @@
+.button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 44px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--main-active-text-color);
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--main-text-color-20);
+  background-color: transparent;
+  cursor: pointer;
+  transition: var(--transition-4);
+}
+.button:hover {
+  border: 1px solid var(--main-text-color-50);
+  background-color: var(--bg-600);
+}
+.button svg {
+  height: 16px;
+  width: 16px;
+  color: var(--main-active-text-color);
+}
+.button--accent {
+  background-color: var(--accent-30);
+  color: var(--main-active-text-color);
+  border: 1px solid transparent;
+}
+.button--accent:hover {
+  background-color: var(--accent-10);
+}/*# sourceMappingURL=buttons.css.map */
