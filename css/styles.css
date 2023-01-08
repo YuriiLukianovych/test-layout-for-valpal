@@ -231,7 +231,7 @@ label {
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body {
   max-height: calc(100vh - 550px);
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body ul > li {
   height: 24px;
@@ -239,7 +239,7 @@ label {
   align-items: center;
   gap: 12px;
   padding-left: 24px;
-  padding-right: 12px;
+  padding-right: 5px;
   color: var(--main-text-color);
   border: 1px solid transparent;
   background-color: transparent;
@@ -285,7 +285,7 @@ label {
   height: 100%;
 }
 .wrapper .left-side__footer {
-  margin: 4px 0;
+  padding-top: 4px;
   width: 100%;
   border-top: 1px solid var(--main-text-color-20);
 }
@@ -302,11 +302,13 @@ label {
   color: var(--main-active-text-color);
   padding: 12px;
   border-radius: 4px;
+  background-color: transparent;
   transition: var(--transition-4);
   cursor: pointer;
 }
 .wrapper .left-side__footer .left-side__nav-link:hover {
   color: var(--main-active-text-color);
+  background-color: var(--accent-10);
 }
 .wrapper .left-side__footer .left-side__nav-link svg {
   width: 16px;

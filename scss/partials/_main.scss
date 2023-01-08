@@ -164,7 +164,7 @@
                     // 258
                     //422
                     max-height: calc(100vh - 550px);
-                    overflow-y: auto;
+                    overflow-y: scroll;
 
                     ul > li {
                         height: 24px;
@@ -172,7 +172,7 @@
                         align-items: center;
                         gap: 12px;
                         padding-left: 24px;
-                        padding-right: 12px;
+                        padding-right: 5px;
 
                         color: var(--main-text-color);
                         border: 1px solid transparent;
@@ -224,7 +224,7 @@
             }
         }
         &__footer {
-            margin: 4px 0;
+            padding-top: 4px;
             width: 100%;
             border-top: 1px solid var(--main-text-color-20);
 
@@ -246,11 +246,13 @@
                 color: var(--main-active-text-color);
                 padding: 12px;
                 border-radius: 4px;
+                background-color: transparent;
                 transition: var(--transition-4);
                 cursor: pointer;
 
                 &:hover {
                     color: var(--main-active-text-color);
+                    background-color: var(--accent-10);
                 }
                 svg {
                     width: 16px;
