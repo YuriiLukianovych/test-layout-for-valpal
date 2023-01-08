@@ -17,6 +17,13 @@
   align-items: flex-start;
   gap: 12px;
 }
+.wrapper .left-side__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
 .wrapper .left-side .row {
   width: 100%;
   display: flex;

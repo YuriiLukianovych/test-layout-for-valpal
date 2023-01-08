@@ -1,0 +1,67 @@
+/* utilites classes ------------------------------------------------- */
+.w100 {
+    width: 100%;
+}
+.fs0 {
+    flex-shrink: 0;
+}
+.fg1 {
+    flex-grow: 1;
+}
+.svg {
+    width: 16px;
+    height: 16px;
+    color: var(--main-text-color);
+    transition: var(--transition-4);
+}
+.svg-hover {
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-4);
+    &:hover {
+        color: var(--secondary-text-color);
+    }
+}
+.svg-hover-2 {
+    transition: var(--transition-4);
+    &:hover {
+        color: var(--main-active-text-color);
+    }
+}
+
+.svg-secondary {
+    width: 16px;
+    height: 16px;
+    color: var(--secondary-text-color);
+    transition: var(--transition-4);
+    &:hover {
+        color: var(--main-active-text-color);
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-text-color-20);
+    flex-shrink: 0;
+}
+
+/* to visually hide the element */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* end utilites classes ------------------------------------------------- */

@@ -37,3 +37,30 @@
         }
     }
 }
+
+.clear-btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    transition: var(--transition-4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    &:hover,
+    &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
