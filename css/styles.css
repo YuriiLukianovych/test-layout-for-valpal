@@ -190,7 +190,7 @@ label {
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  padding-left: 20px;
+  padding-left: 21px;
   background: linear-gradient(to right, var(--accent-10) 0%, var(--accent-10) 20%, rgba(0, 0, 0, 0) 100%);
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__header[aria-expanded=true] svg.plus {
@@ -241,7 +241,7 @@ label {
   align-items: center;
   gap: 12px;
   padding-left: 18px;
-  padding-right: 13px;
+  padding-right: 14px;
   color: var(--main-text-color);
   background-color: transparent;
   transition: var(--transition-4);
@@ -272,7 +272,7 @@ label {
   flex-grow: 1;
   display: flex;
   align-items: center;
-  gap: var(--gap5);
+  gap: 10px;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body ul > li .c-logo {
   width: 20px;
@@ -283,6 +283,7 @@ label {
 .wrapper .left-side__main .companies-accordion-box .accordeon__body ul > li .c-logo img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 .wrapper .left-side__footer {
   padding-left: 8px;
