@@ -47,40 +47,77 @@
                 </div>
             </div>
             <div class="left-side__main">
-                <div class="left-side__row">
-                    <div class="search-filter-box">
-                        <label class="search-icon" for="searchCompany">
-                            <svg class="svg">
-                                <use href="./icons/sprite.svg#search-icon"></use>
-                            </svg>
-                        </label>
-                        <input class="form-input" id="searchCompany" type="text" placeholder="Search for companies">
-                        <button class="clear-btn filter-btn" id="filterMenu" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <svg class="svg svg-hover-2">
-                                <use href="./icons/sprite.svg#filter-icon"></use>
-                            </svg>
-                        </button>
-                        <ul class="dropdown-menu list" aria-labelledby="filterMenu">
-                            <li class="dropdown-item">
-                                <label class="check">
-                                    <input class="check__input visually-hidden" type="radio" name="filterCompany"
-                                        value="filter" id="">
-                                    <span class="check__box">
-                                        <svg class="rect">
-                                            <use href="./icons/sprite.svg#rect"></use>
-                                        </svg>
-                                        <!-- <svg class="rect-checked-2" *ngIf="filter==='All'">
+                <div class="search-filter-box">
+                    <label class="search-icon" for="searchCompany">
+                        <svg class="svg">
+                            <use href="./icons/sprite.svg#search-icon"></use>
+                        </svg>
+                    </label>
+                    <input class="form-input" id="searchCompany" type="text" placeholder="Search for companies">
+                    <button class="clear-btn filter-btn" id="filterMenu" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <svg class="svg svg-hover-2">
+                            <use href="./icons/sprite.svg#filter-icon"></use>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu list" aria-labelledby="filterMenu">
+                        <li class="dropdown-item">
+                            <label class="check">
+                                <input class="check__input visually-hidden" type="radio" name="filterCompany"
+                                    value="filter" id="">
+                                <span class="check__box">
+                                    <svg class="rect">
+                                        <use href="./icons/sprite.svg#rect"></use>
+                                    </svg>
+                                    <!-- <svg class="rect-checked-2" *ngIf="filter==='All'">
                                             <use href="./icons/sprite.svg#rect-checked-2"></use>
                                         </svg>
                                         <svg class="rect-checked" *ngIf="filter!=='All'">
                                             <use href="./icons/sprite.svg#rect-checked"></use>
                                         </svg> -->
-                                    </span>
-                                    <span class="check__text">Filter Companies</span>
-                                </label>
-                            </li>
-                        </ul>
+                                </span>
+                                <span class="check__text">Filter Companies</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="companies-accordion-box">
+                    <div class="accordeon__header" data-bs-toggle="collapse" data-bs-target="#collapseCompaniesList"
+                        aria-expanded="true" aria-controls="collapseCompaniesList">
+
+                        <h3>All (20)</h3>
+                        <div class="toggle-icon">
+                            <svg class="svg plus">
+                                <use href="./icons/sprite.svg#plus-icon"></use>
+                            </svg>
+                            <svg class="svg minus">
+                                <use href="./icons/sprite.svg#minus-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="accordeon__body collapse show scrollbar scrollbar--2" id="collapseCompaniesList"
+                        aria-labelledby="headingOne">
+                        <div>
+                            <ul class="list">
+                                <li>
+                                    <button class="clear-btn key-btn" type="button">
+                                        <svg class="svg svg-hover-2">
+                                            <use href="./icons/sprite.svg#key-icon"></use>
+                                        </svg>
+                                    </button>
+
+                                    <div class="company-item">
+                                        <div class="c-logo">
+                                            <!-- <img src="{{filepath+'companiesLogo/'+company.logo}}" alt="company logo"> -->
+                                        </div>
+                                        <span>Company name</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

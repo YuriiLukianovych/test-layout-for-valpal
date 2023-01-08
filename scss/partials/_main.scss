@@ -88,6 +88,133 @@
                     left: 12px;
                 }
             }
+
+            .companies-accordion-box {
+                width: 100%;
+                margin-top: 8px;
+
+                .accordeon__header {
+                    height: 24px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    padding-left: 24px;
+                    background: linear-gradient(
+                        to right,
+                        var(--accent-10) 0%,
+                        var(--accent-10) 20%,
+                        rgba(0, 0, 0, 0) 100%
+                    );
+
+                    &[aria-expanded="true"] svg.plus {
+                        display: none;
+                    }
+                    &[aria-expanded="false"] svg.minus {
+                        display: none;
+                    }
+
+                    .toggle-icon {
+                        width: 14px;
+                        height: 14px;
+                        position: absolute;
+                        top: 50%;
+                        left: var(--gap5);
+                        transform: translateY(-50%) rotateX(180deg);
+                        transition: var(--transition-4);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                            color: var(--secondary-text-color);
+                            transition: var(--transition-4);
+                        }
+                    }
+                    &:hover {
+                        .toggle-icon svg {
+                            color: var(--main-active-text-color);
+                        }
+                    }
+                    &.collapsed {
+                        // .toggle-icon {
+                        //   transform: translateY(-50%);
+                        // }
+                    }
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 13px;
+                        letter-spacing: 0.03em;
+                        text-transform: uppercase;
+                        color: var(--secondary-text-color);
+                    }
+                }
+                .accordeon__body {
+                    // padding-left: 14px;
+                    // max-height: 240px;
+                    // 258
+                    //422
+                    max-height: calc(100vh - 422px);
+                    overflow-y: auto;
+
+                    ul > li {
+                        height: 24px;
+                        display: flex;
+                        align-items: center;
+                        gap: var(--gap5);
+                        margin-right: var(--gap5);
+                        padding-left: var(--gap5);
+
+                        color: var(--main-text-color);
+                        border: 1px solid transparent;
+                        background-color: transparent;
+                        transition: var(--transition-4);
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--secondary-text-color);
+                            background-color: var(--accent-10);
+                        }
+                        &.active {
+                            color: var(--main-active-text-color);
+                            background-color: var(--accent-20);
+                        }
+                        &.active:hover {
+                            background-color: var(--accent-30);
+                        }
+
+                        .key-btn {
+                            width: 14px;
+                            height: 14px;
+                            svg {
+                                width: 100%;
+                                height: 100%;
+                                color: var(--secondary-text-color);
+                            }
+                        }
+                        .company-item {
+                            flex-grow: 1;
+                            display: flex;
+                            align-items: center;
+                            gap: var(--gap5);
+                        }
+                        .c-logo {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: var(--border-radius);
+                            overflow: hidden;
+                            background-color: tomato;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
         }
         &__row {
             width: 100%;
