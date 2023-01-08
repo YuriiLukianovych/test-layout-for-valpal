@@ -45,11 +45,24 @@ button {
     height: 100vh;
 
     display: flex;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Söhne", ui-sans-serif, system-ui, "-apple-system", "Segoe UI",
+        "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif,
+        "Helvetica Neue", Arial;
 }
 .left-side {
     flex-basis: 250px;
     background-color: #121212;
     padding: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.left-side .row {
+    display: flex;
+    align-items: center;
 }
 .right-side {
     background-color: #181818;
