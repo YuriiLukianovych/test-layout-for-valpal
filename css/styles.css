@@ -153,9 +153,6 @@ label {
   position: relative;
   padding-left: 8px;
   padding-right: 8px;
-  display: flex;
-  align-items: center;
-  gap: var(--gap5);
 }
 .wrapper .left-side__main .search-filter-box .filter-btn {
   position: absolute;
@@ -166,7 +163,7 @@ label {
 .wrapper .left-side__main .search-filter-box .form-input {
   height: 32px;
   padding-left: 40px;
-  padding-right: 35px;
+  padding-right: 40px;
   padding-top: 6px;
   padding-bottom: 6px;
   font-size: 14px;

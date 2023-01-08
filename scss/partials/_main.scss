@@ -58,10 +58,6 @@
                 padding-left: 8px;
                 padding-right: 8px;
 
-                display: flex;
-                align-items: center;
-                gap: var(--gap5);
-
                 .filter-btn {
                     position: absolute;
                     top: 50%;
@@ -72,7 +68,7 @@
                 .form-input {
                     height: 32px;
                     padding-left: 40px;
-                    padding-right: 35px;
+                    padding-right: 40px;
                     padding-top: 6px;
                     padding-bottom: 6px;
                     font-size: 14px;
