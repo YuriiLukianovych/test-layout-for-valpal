@@ -441,8 +441,8 @@ label {
 /* end utilites classes ------------------------------------------------- */
 .button {
   border: none;
-  outline: none;
-  box-shadow: none;
+  outline: none !important;
+  box-shadow: none !important;
   display: flex;
   align-items: center;
   gap: 12px;
