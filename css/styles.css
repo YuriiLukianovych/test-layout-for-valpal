@@ -242,7 +242,7 @@ label {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 13px;
   color: var(--main-text-color);
   border: 1px solid transparent;
