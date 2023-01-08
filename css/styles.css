@@ -231,7 +231,7 @@ label {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 12px;
+  right: 20px;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body {
   max-height: calc(100vh - 550px);
@@ -243,7 +243,7 @@ label {
   align-items: center;
   gap: 12px;
   padding-left: 20px;
-  padding-right: 5px;
+  padding-right: 13px;
   color: var(--main-text-color);
   border: 1px solid transparent;
   background-color: transparent;
@@ -282,7 +282,6 @@ label {
   height: 20px;
   border-radius: var(--border-radius);
   overflow: hidden;
-  background-color: tomato;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body ul > li .c-logo img {
   width: 100%;
