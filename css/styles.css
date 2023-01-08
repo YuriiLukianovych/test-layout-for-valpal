@@ -362,6 +362,46 @@ label {
   overflow: hidden;
 }
 
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  background: var(--scrollbar) !important;
+  border-radius: 12px !important;
+  max-height: 150px !important;
+  opacity: 0.5 !important;
+}
+.scrollbar::-webkit-scrollbar {
+  width: var(--scrollbar-width) !important;
+  background: transparent !important;
+  border-radius: 0px !important;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  border-radius: 0px !important;
+}
+.scrollbar--within::-webkit-scrollbar {
+  width: 0px !important;
+}
+.scrollbar--2::-webkit-scrollbar-thumb {
+  background: var(--scrollbar) !important;
+  border-radius: 12px !important;
+}
+
+.scrollbar-w10:hover::-webkit-scrollbar-thumb {
+  background: var(--scrollbar) !important;
+  border-radius: 12px !important;
+  max-height: 150px !important;
+  opacity: 0.5 !important;
+}
+.scrollbar-w10::-webkit-scrollbar {
+  width: var(--scrollbar-width-2) !important;
+  background: transparent !important;
+  border-radius: 0px !important;
+}
+.scrollbar-w10::-webkit-scrollbar-thumb {
+  width: 5px !important;
+  background: transparent !important;
+  border-radius: 0px !important;
+}
+
 /* end utilites classes ------------------------------------------------- */
 .button {
   border: none;
