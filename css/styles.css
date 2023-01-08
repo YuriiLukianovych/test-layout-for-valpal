@@ -232,7 +232,7 @@ label {
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body {
   margin-bottom: 4px;
-  max-height: calc(100vh - 500px);
+  max-height: calc(100vh - 502px);
   overflow-y: scroll;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body ul > li {
