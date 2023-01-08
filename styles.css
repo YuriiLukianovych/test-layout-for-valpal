@@ -49,8 +49,10 @@ button {
 .left-side {
     flex-basis: 250px;
     background-color: #121212;
+    padding: 8px;
 }
 .right-side {
     background-color: #181818;
     flex-basis: calc(100% - 250px);
+    padding: 8px 20px;
 }
