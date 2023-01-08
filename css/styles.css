@@ -231,7 +231,8 @@ label {
   right: 20px;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body {
-  max-height: calc(100vh - 550px);
+  margin-bottom: 4px;
+  max-height: calc(100vh - 500px);
   overflow-y: scroll;
 }
 .wrapper .left-side__main .companies-accordion-box .accordeon__body ul > li {

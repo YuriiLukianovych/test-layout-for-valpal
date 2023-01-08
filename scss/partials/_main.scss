@@ -161,7 +161,8 @@
                     // max-height: 240px;
                     // 258
                     //422
-                    max-height: calc(100vh - 550px);
+                    margin-bottom: 4px;
+                    max-height: calc(100vh - 500px);
                     overflow-y: scroll;
 
                     ul > li {
