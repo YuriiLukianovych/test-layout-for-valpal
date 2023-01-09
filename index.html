@@ -25,68 +25,87 @@
                             <span>Sign In</span>
                         </button> -->
 
-                        <button class="button w100 collapsed logged" type="button" data-toggle="collapse"
-                            data-target="#collapseBtn" aria-expanded="false" aria-controls="collapseBtn">
-                            <svg class="svg">
-                                <use href="./icons/sprite.svg#user-icon"></use>
-                            </svg>
-                            <span>User Name</span>
-
-                            <div class="toggle-icon">
-                                <svg>
-                                    <use href="./icons/sprite.svg#angle-down-icon"></use>
+                        <div class="logged-collapse w100">
+                            <button class="button w100 login-btn unlock-btn collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseBtn" aria-expanded="false"
+                                aria-controls="collapseBtn">
+                                <svg class="svg">
+                                    <use href="./icons/sprite.svg#user-icon"></use>
                                 </svg>
-                            </div>
-                        </button>
+                                <span class="user-name">User Name</span>
 
-                        <div class="accordeon__body collapse w100" id="collapseBtn" aria-labelledby="headingBtn">
-                            <div class="menu-block">
-                                <ul class="profile__menu-list list">
-                                    <li class="profile__menu-item">
-                                        <svg class="profile__menu-icon">
+                                <div class="toggle-icon">
+                                    <svg>
+                                        <use href="./icons/sprite.svg#angle-right-icon"></use>
+                                    </svg>
+                                </div>
+                            </button>
+
+                            <div class="accordeon__body collapse w100" id="collapseBtn" aria-labelledby="headingBtn">
+                                <div class="menu-block">
+
+                                    <button class="button w100 unlock-btn subscribe-btn" type="button">
+                                        <svg class="svg">
                                             <use href="./icons/sprite.svg#user-icon"></use>
                                         </svg>
-                                        <div mat-line class="profile__menu-text">User Settings</div>
-                                    </li>
-                                    <li class="profile__menu-item">
-                                        <svg class="profile__menu-icon">
-                                            <use href="./icons/sprite.svg#bag-icon"></use>
-                                        </svg>
-                                        <div mat-line class="profile__menu-text">Manage Subscriptions</div>
-                                    </li>
-                                    <li class="profile__menu-item">
-                                        <svg class="profile__menu-icon">
-                                            <use href="./icons/sprite.svg#credit-card-icon"></use>
-                                        </svg>
-                                        <div mat-line class="profile__menu-text">Payment Method & History</div>
-                                    </li>
-                                    <li class="profile__menu-item">
-                                        <svg class="profile__menu-icon">
-                                            <use href="./icons/sprite.svg#user-icon"></use>
-                                        </svg>
-                                        <div mat-line class="profile__menu-text">App Settings</div>
-                                    </li>
-                                    <li class="profile__menu-item">
-                                        <svg class="profile__menu-icon">
-                                            <use href="./icons/sprite.svg#user-icon"></use>
-                                        </svg>
-                                        <div mat-line class="profile__menu-text">Notifications</div>
-                                    </li>
-                                    <li class="profile__menu-item">
-                                        <svg class="profile__menu-icon">
-                                            <use href="./icons/sprite.svg#user-icon"></use>
-                                        </svg>
-                                        <div mat-line class="profile__menu-text">Light Mode</div>
-                                    </li>
-                                    <li class="profile__menu-item">
-                                        <svg class="profile__menu-icon">
-                                            <use href="./icons/sprite.svg#user-icon"></use>
-                                        </svg>
-                                        <div mat-line class="profile__menu-text">Log Out</div>
-                                    </li>
-                                </ul>
+                                        <span>Subscribe</span>
+                                    </button>
+
+                                    <div class="divider"></div>
+
+                                    <ul class="profile__menu-list list">
+                                        <li class="profile__menu-item">
+                                            <svg class="profile__menu-icon">
+                                                <use href="./icons/sprite.svg#user-icon"></use>
+                                            </svg>
+                                            <div mat-line class="profile__menu-text">User Settings</div>
+                                        </li>
+                                        <li class="profile__menu-item">
+                                            <svg class="profile__menu-icon">
+                                                <use href="./icons/sprite.svg#bag-icon"></use>
+                                            </svg>
+                                            <div mat-line class="profile__menu-text">Manage Subscriptions</div>
+                                        </li>
+                                        <li class="profile__menu-item">
+                                            <svg class="profile__menu-icon">
+                                                <use href="./icons/sprite.svg#credit-card-icon"></use>
+                                            </svg>
+                                            <div mat-line class="profile__menu-text">Payment Method & History</div>
+                                        </li>
+                                        <li class="profile__menu-item">
+                                            <svg class="profile__menu-icon">
+                                                <use href="./icons/sprite.svg#user-icon"></use>
+                                            </svg>
+                                            <div mat-line class="profile__menu-text">App Settings</div>
+                                        </li>
+                                        <li class="profile__menu-item">
+                                            <svg class="profile__menu-icon">
+                                                <use href="./icons/sprite.svg#user-icon"></use>
+                                            </svg>
+                                            <div mat-line class="profile__menu-text">Notifications</div>
+                                        </li>
+                                        <li>
+                                            <div class="divider footer"></div>
+                                        </li>
+                                        <li class="profile__menu-item">
+                                            <svg class="profile__menu-icon">
+                                                <use href="./icons/sprite.svg#user-icon"></use>
+                                            </svg>
+                                            <div mat-line class="profile__menu-text">Light Mode</div>
+                                        </li>
+                                        <li class="profile__menu-item">
+                                            <svg class="profile__menu-icon">
+                                                <use href="./icons/sprite.svg#user-icon"></use>
+                                            </svg>
+                                            <div mat-line class="profile__menu-text">Log Out</div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+
+
+
 
                     </div>
                     <div class="left-side__row to-hide-test">

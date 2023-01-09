@@ -1,4 +1,4 @@
-const btn = document.querySelector(".logged");
+const btn = document.querySelector(".login-btn");
 const btnsList = document.querySelectorAll(".to-hide-test");
 
 let collapsed = true;
