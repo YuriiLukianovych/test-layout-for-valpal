@@ -142,10 +142,8 @@ label {
   position: relative;
   border-radius: var(--border-radius);
   border: 1px solid var(--main-text-color-20);
-  padding-bottom: 4px;
 }
 .wrapper .left-side__header .logged-collapse .login-btn {
-  margin-bottom: 4px;
   padding-right: 40px;
 }
 .wrapper .left-side__header .logged-collapse .login-btn span.user-name {
@@ -192,6 +190,7 @@ label {
 .wrapper .left-side__header .profile__menu-list {
   padding: 0;
   padding-top: 8px;
+  padding-bottom: 4px;
 }
 .wrapper .left-side__header .profile__menu-item {
   height: 32px;

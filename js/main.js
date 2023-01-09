@@ -1,4 +1,5 @@
 const btn = document.querySelector(".login-btn");
+const test = document.querySelector("#test");
 const btnsList = document.querySelectorAll(".to-hide-test");
 
 let collapsed = true;
@@ -16,3 +17,9 @@ btn.addEventListener("click", (e) => {
         });
     }
 });
+
+test.addEventListener("click", (e) => {
+    console.log(document.documentElement.clientHeight);
+});
+
+// documentElement.clientHeight;
