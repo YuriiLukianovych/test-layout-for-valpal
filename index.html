@@ -17,22 +17,86 @@
         <div class="left-side">
             <div class="left-side__header">
                 <div>
-                    <div class="left-side__row">
-                        <button class="button w100" type="button">
+                    <div class="left-side__row column w100">
+                        <!-- <button class="button w100" type="button">
                             <svg class="svg">
                                 <use href="./icons/sprite.svg#user-icon"></use>
                             </svg>
                             <span>Sign In</span>
+                        </button> -->
+
+                        <button class="button w100 collapsed logged" type="button" data-toggle="collapse"
+                            data-target="#collapseBtn" aria-expanded="false" aria-controls="collapseBtn">
+                            <svg class="svg">
+                                <use href="./icons/sprite.svg#user-icon"></use>
+                            </svg>
+                            <span>User Name</span>
+
+                            <div class="toggle-icon">
+                                <svg>
+                                    <use href="./icons/sprite.svg#angle-down-icon"></use>
+                                </svg>
+                            </div>
                         </button>
+
+                        <div class="accordeon__body collapse w100" id="collapseBtn" aria-labelledby="headingBtn">
+                            <div class="menu-block">
+                                <ul class="profile__menu-list list">
+                                    <li class="profile__menu-item">
+                                        <svg class="profile__menu-icon">
+                                            <use href="./icons/sprite.svg#user-icon"></use>
+                                        </svg>
+                                        <div mat-line class="profile__menu-text">User Settings</div>
+                                    </li>
+                                    <li class="profile__menu-item">
+                                        <svg class="profile__menu-icon">
+                                            <use href="./icons/sprite.svg#bag-icon"></use>
+                                        </svg>
+                                        <div mat-line class="profile__menu-text">Manage Subscriptions</div>
+                                    </li>
+                                    <li class="profile__menu-item">
+                                        <svg class="profile__menu-icon">
+                                            <use href="./icons/sprite.svg#credit-card-icon"></use>
+                                        </svg>
+                                        <div mat-line class="profile__menu-text">Payment Method & History</div>
+                                    </li>
+                                    <li class="profile__menu-item">
+                                        <svg class="profile__menu-icon">
+                                            <use href="./icons/sprite.svg#user-icon"></use>
+                                        </svg>
+                                        <div mat-line class="profile__menu-text">App Settings</div>
+                                    </li>
+                                    <li class="profile__menu-item">
+                                        <svg class="profile__menu-icon">
+                                            <use href="./icons/sprite.svg#user-icon"></use>
+                                        </svg>
+                                        <div mat-line class="profile__menu-text">Notifications</div>
+                                    </li>
+                                    <li class="profile__menu-item">
+                                        <svg class="profile__menu-icon">
+                                            <use href="./icons/sprite.svg#user-icon"></use>
+                                        </svg>
+                                        <div mat-line class="profile__menu-text">Light Mode</div>
+                                    </li>
+                                    <li class="profile__menu-item">
+                                        <svg class="profile__menu-icon">
+                                            <use href="./icons/sprite.svg#user-icon"></use>
+                                        </svg>
+                                        <div mat-line class="profile__menu-text">Log Out</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="left-side__row">
-                        <button class="button button--accent fg1" type="button">
+                        <button class="button button--accent2 fg1" type="button">
                             <svg class="svg">
                                 <use href="./icons/sprite.svg#user-icon"></use>
                             </svg>
                             <span>Overview</span>
                         </button>
-                        <button class="button button--accent fs0 news-btn" type="button">
+                        <button class="button button--accent2 fs0 news-btn" type="button">
                             <svg class="svg">
                                 <use href="./icons/sprite.svg#news-icon"></use>
                             </svg>
@@ -98,7 +162,7 @@
                             </svg>
                         </div>
 
-                        <h3>All (20)</h3>
+                        <h3>All <span class="count">(20)</span></h3>
 
                         <svg class="svg some-icon">
                             <use href="./icons/sprite.svg#user-icon"></use>
@@ -112,7 +176,7 @@
                                 <li>
                                     <div class="company-item">
                                         <div class="c-logo">
-                                            <img src="./icons/american-silver.svg" alt="company logo">
+                                            <img src="./icons/fortuna-silver-mines.svg" alt="company logo">
                                         </div>
                                         <span>Company name</span>
                                     </div>
@@ -126,7 +190,7 @@
                                 <li>
                                     <div class="company-item">
                                         <div class="c-logo">
-                                            <img src="./icons/american-silver.svg" alt="company logo">
+                                            <img src="./icons/fortuna-silver-mines.svg" alt="company logo">
                                         </div>
                                         <span>Company name</span>
                                     </div>
@@ -140,7 +204,7 @@
                                 <li>
                                     <div class="company-item">
                                         <div class="c-logo">
-                                            <img src="./icons/american-silver.svg" alt="company logo">
+                                            <img src="./icons/fortuna-silver-mines.svg" alt="company logo">
                                         </div>
                                         <span>Company name</span>
                                     </div>
@@ -154,7 +218,7 @@
                                 <li>
                                     <div class="company-item">
                                         <div class="c-logo">
-                                            <img src="./icons/american-silver.svg" alt="company logo">
+                                            <img src="./icons/fortuna-silver-mines.svg" alt="company logo">
                                         </div>
                                         <span>Company name</span>
                                     </div>
@@ -466,6 +530,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
