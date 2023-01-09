@@ -14,6 +14,9 @@
     color: var(--main-text-color);
     transition: var(--transition-4);
 }
+.dn {
+    display: none !important;
+}
 .svg-hover {
     width: 16px;
     height: 16px;
